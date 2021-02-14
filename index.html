@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task calendar </title>
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+</head>
+<body>
+        <h2 id="errmsg" ></р>
+        <section>
+            <div><h2>CALENDAR</h2></div>             
+            <select id="nameSelectFirst"></select> 
+            <button id="newEventBtn">New Event +</button>
+        </section>
+        
+        <div id="tableMain"></div>
+
+        <div id="textField"></div>
+        <div id="nameField"></div>
+        <div id="dayField"></div>
+        <div id="timeField"></div>
+
+        <div id="editFormBack"></div>
+        <div id="card">
+            <div class="rootListCard">   
+                <form id="selectEvent" name="selectEvent" >   
+                    <span>Name of the event:</span>                 
+                    <input  id="eventInput" placeholder="Name of Event" />  
+                </form><br />
+                <form id="selectName" name="selectName" >  
+                    <span>Participants:&nbsp;</span>                  
+                    <select id="nameSelect" class="btn"></select> 
+                </form><br />
+                <form id="selectDay" name="selectDay" >    
+                    <span>Day:</span>             
+                    <select id="daySelect" class="btn"></select>  
+                </form><br />
+                <form id="selectTime" name="selectTime" >        
+                    <span>Time:</span>            
+                    <select id="timeSelect" class="btn"></select>  
+                </form><br />
+                     
+                    <button id="saveEventBtn">Save</button>
+                    <button id="cancelEventBtn">Cancel</button>               
+            </div>
+        </div>  
+</body>
+</html>
